@@ -1,0 +1,34 @@
+borough,baseline_rank,severity_focused_rank,scale_focused_rank,rank_change_range
+Westminster,1,1,1,0
+Tower Hamlets,2,2,3,1
+Camden,3,3,2,1
+Southwark,4,6,4,2
+Hackney,5,7,5,2
+Wandsworth,6,9,6,3
+Lambeth,7,10,7,3
+Kensington & Chelsea,8,5,12,7
+Islington,9,8,10,2
+Ealing,10,12,8,4
+Newham,11,13,11,2
+Brent,12,14,9,5
+Hammersmith & Fulham,13,11,14,3
+City of London,14,4,22,18
+Lewisham,15,16,13,3
+Haringey,16,15,15,1
+Hounslow,17,17,16,1
+Merton,18,18,20,2
+Greenwich,19,19,19,0
+Croydon,20,23,17,6
+Barnet,21,22,18,4
+Waltham Forest,22,20,21,2
+Richmond upon Thames,23,21,23,2
+Enfield,24,25,24,1
+Kingston upon Thames,25,24,25,1
+Hillingdon,26,26,26,0
+Redbridge,27,27,27,0
+Barking & Dagenham,28,28,29,1
+Sutton,29,29,28,1
+Bromley,30,30,30,0
+Harrow,31,31,31,0
+Bexley,32,32,32,0
+Havering,33,33,33,0
