@@ -1,14 +1,12 @@
 # Prioritising Clean-Air Interventions Across London Boroughs
 
-## Research question
+## Question of the research
 
 Which London boroughs should receive priority clean-air interventions when both the severity and scale of exposure are considered?
 
 ## Project overview
 
 This project uses the London Atmospheric Emissions Inventory 2022 to compare exposure across the 32 London boroughs and the City of London. It combines population exposure with pollution levels around schools, hospitals and care homes.
-
-The project is a policy-prioritisation exercise. It does not estimate the causal effect of ULEZ or any other intervention.
 
 ## Data source
 
