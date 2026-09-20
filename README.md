@@ -22,6 +22,7 @@ The analysis uses:
 - hospitals and care homes above the same thresholds.
 
 The selected thresholds—20 µg/m³ for NO₂ and 10 µg/m³ for PM2.5—were chosen for three reasons: 
+
 1) They have a health-based foundation, as both values correspond to interim targets established in the 2021 WHO Air Quality Guidelines.
 2) They are policy-relevant because they correspond to the annual limits established by the European Union for 2030 (although UK is no longer in UE).
 3) They are analytically useful: the current UK limit of 40 µg/m³ for NO₂ is exceeded by very few observations in the 2022 dataset, whereas the stricter WHO guideline of 10 µg/m³ is exceeded across all of London.
