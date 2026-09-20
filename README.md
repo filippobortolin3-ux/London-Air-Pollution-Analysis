@@ -5,13 +5,14 @@
 Which London boroughs should receive priority clean-air interventions when both the severity and scale of exposure are considered?
 
 ## Project overview
+
 This project uses the London Atmospheric Emissions Inventory 2022 to compare exposure across the 32 London boroughs and the City of London. It combines population exposure with pollution levels around schools, hospitals and care homes.
 
 ## Data source
 
 Greater London Authority and Transport for London, *LAEI 2022: Population, School, Hospitals, Care Home Exposure and Proportion of Road Length Exceeding*.
 
-Download the ZIP from the [London Atmospheric Emissions Inventory 2022](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g) page.
+Download the ZIP from the [London Atmospheric Emissions Inventory 2022](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g) page. There it's possible to find 3 excel files covering population exposure and road-length exceedances, air-pollution exposure around schools and exposure around hospitals and care homes.
 
 The analysis uses:
 
