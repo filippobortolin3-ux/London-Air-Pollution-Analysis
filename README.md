@@ -29,14 +29,12 @@ The selected thresholds—20 µg/m³ for NO₂ and 10 µg/m³ for PM2.5—were c
 
 ## Method
 
-The baseline score has two parts:
+The baseline score is composed by two other indexes:
 
-1. **Exposure severity:** the percentage of each group exposed above the selected thresholds.
-2. **Exposure scale:** the number of affected residents, schools and health sites, normalised across boroughs.
+1. **Exposure severity:** the percentage of each group exposed above the selected threshold
+2. **Exposure scale:** the number of affected residents, schools and health sites, normalised across boroughs
 
-Within each part, population receives a 40% weight, schools 30% and health sites 30%. The final score assigns equal weight to severity and scale.
-
-Because these weights represent policy choices rather than estimated parameters, the script also tests severity-focused and scale-focused scenarios.
+Within each part, population receives a 40% weight, schools 30% and health sites 30% : population exposure receives 40% because the model’s primary goal is to allocate public resources according to the overall number and proportion of residents affected. Schools receive 30% because children are particularly vulnerable to air pollution and spend a substantial amount of time at school. Hospitals and care homes receive the same weight (30%) because they contain patients, older residents and other health-vulnerable groups. The decision of assigning equal weights to schools and healthcare because I didn't have sufficient evidence to prioritise one vulnerable group over the other.
 
 ## Run the analysis
 
@@ -53,7 +51,7 @@ python analysis.py --zip "/path/to/LAEI2022-Population-Exposure-and-Proportion-R
 ```
 
 The script creates:
-
+ 
 - `borough_priority_ranking.csv`;
 - `sensitivity_analysis.csv`;
 - `01_top_10_priority_score.png`;
@@ -62,20 +60,25 @@ The script creates:
 
 ## Interpretation
 
-A high score means that a borough combines relatively severe exposure with a relatively large affected population or number of vulnerable sites. The score is useful for screening and prioritisation. It should not be interpreted as a complete cost-benefit analysis.
+A high priority score means that a borough combines relatively severe exposure with a relatively large number of affected residents, schools, hospitals and care homes: exposure severity reflects the proportion of each group living above the selected NO₂ and PM2.5 thresholds, while exposure scale reflects the absolute number of people and vulnerable sites affected relative to other London boroughs. 
+So it's understandable a borough with both indexes high may requires stronger attention from the London's policy makers.
+The score is not a percentage measure of pollution: for example, Westminster’s score of 89.6 does not mean that its pollution level or health risk is 89.6%. It's a relative priority index: Westminster receives the highest score because it presents the strongest combination of exposure severity and affected scale compared with the other London boroughs.
+Based the final scores calculated, I made a ranking of the different boroughs based on the interventions should be done:
 
-The results support three policy tiers:
+Tier 1 – Immediate assessment and prioritised intervention: conduct detailed local analysis to clearly identify pollution hotspots, emission sources and vulnerable populations. It's mandatory in these areas the implementation of evidence-based measures.
+Tier 2 – Targeted monitoring and prevention: strengthen monitoring around exposed schools, hospitals and care homes, while introducing proportionate preventive measures to avoid further deterioration.
+Tier 3 – Routine monitoring and maintenance: maintain existing air-quality controls, monitor changes over time and redefine priorities if exposure indicators begin to worsen
 
-- **Tier 1:** detailed local assessment and early intervention;
-- **Tier 2:** targeted monitoring and prevention;
-- **Tier 3:** routine monitoring and maintenance.
+## Policy Reccomandation
 
-Potential Tier 1 actions include school-street measures, targeted monitoring near hospitals and care homes, low-emission transport initiatives and source-specific investigation. The dataset identifies where exposure is concentrated but does not by itself establish which emission source caused it.
 
 ## Limitations
 
-- Results use modelled 2022 annual concentrations rather than real-time sensor observations.
+- The analysis uses 2022 data
 - The selected thresholds and score weights are explicit analytical choices.
 - Counts for different pollutants may refer to overlapping people or sites and must not be added as unique exposures.
 - The analysis does not include intervention costs, deprivation or borough implementation capacity.
 - The score supports further investigation; it does not prove the effectiveness of a particular policy.
+
+## References
+
